@@ -1,0 +1,229 @@
+/**********Colors**********/
+//Primary
+$red: hsl(0, 100%, 74%);
+$green:hsl(154, 59%, 51%);
+//Accent
+$blue: hsl(248, 32%, 49%);
+//Neutral
+$darkblue: hsl(249, 48%, 34%);
+$grayishblue: hsl(246, 25%, 77%);
+/**********Typography**********/
+//Font
+$fontsize:16px;
+$fontfamily:'Poppins';
+//Border
+$border: 9px;
+//BoxShadow
+$shadow: 0 8px hsla(0, 44%, 56%, 0.5);
+
+@media screen and (min-width:50px) {
+    * {
+        font: {
+            family: $fontfamily;
+            size: $fontsize;
+        }
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0 auto;
+        min-width: 320px;
+        text-align: center;
+
+        .bg {
+            background: {
+                color: $red;
+                image: url('images/bg-intro-mobile.png');
+                position: 0 -50px;
+            }
+
+            padding: 5%;
+
+
+            header {
+                color: white;
+                margin: 0 auto 5em;
+                max-width: 750px;
+
+                h1 {
+                    font-size: 28px;
+                    margin: 15px 0;
+                }
+
+                p {
+                    padding: 0 8px;
+                }
+            }
+
+            .free {
+                background-color: $blue;
+                border: none;
+                border-radius: $border;
+                box-shadow: $shadow;
+                color: white;
+                line-height: 2em;
+                padding: 0.75em 3em;
+                width: 100%;
+                max-width: 750px;
+
+                &:focus {
+                    outline: none;
+                    background-color: $darkblue;
+                }
+            }
+
+            form {
+                background-color: white;
+                border-radius: $border;
+                box-shadow: $shadow;
+                margin: 1.5em auto;
+                padding: 1.5em;
+                width: 100%;
+                max-width: 750px;
+
+                input {
+                    border-radius: 6px;
+                    border: thin solid lightgray;
+                    padding: 1em;
+                    width: 100%;
+
+                    &::placeholder {
+                        font-weight: 600;
+                        color: gray;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        background-color: $grayishblue;
+                    }
+                }
+
+                .info {
+                    margin-bottom: 1.25em;
+                    position: relative;
+
+                    .error {
+                        position: absolute;
+                        right: 25px;
+                        top: 16px
+                    }
+
+                    .error-msg {
+                        color: $red;
+                        font-style: italic;
+                    }
+
+                    .success-msg {
+                        color: $green;
+                        font-style: normal;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        padding: 0;
+                        text-align: right;
+                        //display: none;
+                    }
+                }
+
+                button {
+                    background-color: $green;
+                    border: none;
+                    border-radius: $border;
+                    box-shadow: 0 4px hsl(154, 55%, 46%);
+                    color: white;
+                    font-weight: 600;
+                    padding: 0.875em;
+                    text-transform: uppercase;
+                    width: 100%;
+
+                    &:focus {
+
+                        outline: none;
+                    }
+
+                    &:hover {
+                        background-color: hsl(154, 57%, 49%);
+                    }
+                }
+
+                p {
+                    color: lightgray;
+                    font-size: 11px;
+                    line-height: 2em;
+                    padding: 1.125em 2em 0;
+                    text-align: center;
+
+                    b {
+                        color: $red;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: $darkblue;
+            padding: 0.5em;
+
+            .attribution {
+                color: $grayishblue;
+                font-size: 11px;
+                text-align: center;
+            }
+
+            .attribution a {
+                color: white;
+                font-size: 11px;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        min-width: 1440px;
+        max-width: 100%;
+
+        .bg {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 7.5% 10%;
+
+            header {
+                width: 50%;
+                text-align: left;
+
+                h1 {
+                    font-size: 48px;
+                    font-size: 3.5vw;
+                    line-height: 1.25em;
+                }
+
+                p {
+                    font-size: 1.125vw;
+                    max-width: 750px;
+                }
+            }
+
+            section {
+                width: 50%;
+                max-width: 1024px;
+
+                form {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

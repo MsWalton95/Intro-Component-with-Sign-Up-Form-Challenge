@@ -1,0 +1,194 @@
+/**********Colors**********/
+/**********Typography**********/
+@media screen and (min-width: 50px) {
+  * {
+    font-family: "Poppins";
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0 auto;
+    min-width: 320px;
+    text-align: center;
+  }
+  body .bg {
+    background-color: #ff7a7a;
+    background-image: url("images/bg-intro-mobile.png");
+    background-position: 0 -50px;
+    padding: 5%;
+  }
+  body .bg header {
+    color: white;
+    margin: 0 auto 5em;
+    max-width: 750px;
+  }
+  body .bg header h1 {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  body .bg header p {
+    padding: 0 8px;
+  }
+  body .bg .free {
+    background-color: #6055a5;
+    border: none;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 8px rgba(192, 93, 93, 0.5);
+            box-shadow: 0 8px rgba(192, 93, 93, 0.5);
+    color: white;
+    line-height: 2em;
+    padding: 0.75em 3em;
+    width: 100%;
+    max-width: 750px;
+  }
+  body .bg .free:focus {
+    outline: none;
+    background-color: #3a2d80;
+  }
+  body .bg form {
+    background-color: white;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 8px rgba(192, 93, 93, 0.5);
+            box-shadow: 0 8px rgba(192, 93, 93, 0.5);
+    margin: 1.5em auto;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 750px;
+  }
+  body .bg form input {
+    border-radius: 6px;
+    border: thin solid lightgray;
+    padding: 1em;
+    width: 100%;
+  }
+  body .bg form input::-webkit-input-placeholder {
+    font-weight: 600;
+    color: gray;
+  }
+  body .bg form input:-ms-input-placeholder {
+    font-weight: 600;
+    color: gray;
+  }
+  body .bg form input::-ms-input-placeholder {
+    font-weight: 600;
+    color: gray;
+  }
+  body .bg form input::placeholder {
+    font-weight: 600;
+    color: gray;
+  }
+  body .bg form input:focus {
+    outline: none;
+    background-color: #b9b6d3;
+  }
+  body .bg form .info {
+    margin-bottom: 1.25em;
+    position: relative;
+  }
+  body .bg form .info .error {
+    position: absolute;
+    right: 25px;
+    top: 16px;
+  }
+  body .bg form .info .error-msg {
+    color: #ff7a7a;
+    font-style: italic;
+  }
+  body .bg form .info .success-msg {
+    color: #38cc8c;
+    font-style: normal;
+    font-weight: 600;
+  }
+  body .bg form .info p {
+    padding: 0;
+    text-align: right;
+  }
+  body .bg form button {
+    background-color: #38cc8c;
+    border: none;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 4px #35b67e;
+            box-shadow: 0 4px #35b67e;
+    color: white;
+    font-weight: 600;
+    padding: 0.875em;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  body .bg form button:focus {
+    outline: none;
+  }
+  body .bg form button:hover {
+    background-color: #36c486;
+  }
+  body .bg form p {
+    color: lightgray;
+    font-size: 11px;
+    line-height: 2em;
+    padding: 1.125em 2em 0;
+    text-align: center;
+  }
+  body .bg form p b {
+    color: #ff7a7a;
+    font-size: 11px;
+  }
+  body footer {
+    background-color: #3a2d80;
+    padding: 0.5em;
+  }
+  body footer .attribution {
+    color: #b9b6d3;
+    font-size: 11px;
+    text-align: center;
+  }
+  body footer .attribution a {
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+  }
+  body footer .attribution a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    min-width: 1440px;
+    max-width: 100%;
+  }
+  body .bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 7.5% 10%;
+  }
+  body .bg header {
+    width: 50%;
+    text-align: left;
+  }
+  body .bg header h1 {
+    font-size: 48px;
+    font-size: 3.5vw;
+    line-height: 1.25em;
+  }
+  body .bg header p {
+    font-size: 1.125vw;
+    max-width: 750px;
+  }
+  body .bg section {
+    width: 50%;
+    max-width: 1024px;
+  }
+  body .bg section form {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
